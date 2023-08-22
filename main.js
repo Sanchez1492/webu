@@ -21,3 +21,23 @@ faqs.forEach(faq => {
         }
     })
 })
+
+// Shown and hide nav menu
+
+const menu = document.querySelector('.nav__menu')
+const menuBtn = document.querySelector('#open-menu-btn')
+const closeBtn = document.querySelector('#close-menu-btn')
+
+menuBtn.addEventListener('click', () => {
+    menu.style.display = 'flex'
+    menuBtn.style.display = 'none'
+    closeBtn.style.display = 'inline-block'
+})
+
+const closeNav = () => {
+    menu.style.display = 'none'
+    closeBtn.style.display = 'none'
+    menuBtn.style.display = 'inline-block'
+}
+
+closeBtn.addEventListener('click', closeNav)
