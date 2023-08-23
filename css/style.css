@@ -148,6 +148,15 @@ nav button {
     color: var(--color-bg2)
 }
 
+.current-page {
+    border-bottom: 1px solid var(--color-white);
+    transition: border-color 0.3s ease; /* Transición suave para el cambio de color */
+}
+
+.current-page:hover {
+    border-bottom-color: var(--color-bg2)
+}
+
 /* --------- HEADER SECTION --------- */
 
 header {
@@ -442,6 +451,10 @@ footer ul li a:hover {
         flex-direction: column;
         gap: 0;
         display: none;
+    }
+
+    .nav__menu:nth-child(1) a {
+        border-bottom: 1px solid var(--color-white);
     }
 
     .nav__menu li {
